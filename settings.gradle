@@ -1,0 +1,18 @@
+rootProject.name = 'cling'
+include(':cling-core')
+project(":cling-core").projectDir = file('core')
+include(':cling-support')
+project(":cling-support").projectDir = file('support')
+
+include(':cling-mediarenderer')
+project(":cling-mediarenderer").projectDir = file('mediarenderer')
+//
+//include(':cling-website')
+//project(":cling-website").projectDir = file('website')
+include(':cling-workbench')
+project(":cling-workbench").projectDir = file('workbench')
+
+include(':cling-demo-android-browser')
+project(":cling-demo-android-browser").projectDir = file('demo/android/browser')
+include(':cling-demo-android-light')
+project(":cling-demo-android-light").projectDir = file('demo/android/light')
